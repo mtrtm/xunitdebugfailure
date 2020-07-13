@@ -1,0 +1,18 @@
+# EditorConfig is awesome: https://EditorConfig.org, https://www.hanselman.com/blog/TabsVsSpacesAPeacefulResolutionWithEditorConfigInVisualStudioPlusNETExtensions.aspx
+
+# top-most EditorConfig file
+root = true
+
+# c# default
+[*.cs]
+indent_style = tab
+indent_size = tab
+
+# clean up whitespace right before a return carriage and don't have extra return carriage at end of file
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+# use 2 spaces for 3 filetypes
+[*.{yml,yaml,json}]
+indent_style = space
+indent_size = 2
