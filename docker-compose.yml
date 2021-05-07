@@ -1,15 +1,15 @@
 version: '3.4'
 
 services:
+
   consoleapp1:
     image: ${DOCKER_REGISTRY-}consoleapp1
     build:
       context: .
       dockerfile: ConsoleApp1/Dockerfile
 
-  xunittestproject1:
-    image: ${DOCKER_REGISTRY-}xunittestproject1
+  xunittestproject1console:
+    image: ${DOCKER_REGISTRY-}xunittestproject1console
     build:
       context: .
-      dockerfile: XUnitTestProject1/Dockerfile
-
+      dockerfile: XUnitTestProject1.Console/Dockerfile
